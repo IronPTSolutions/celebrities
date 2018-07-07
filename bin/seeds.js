@@ -7,7 +7,7 @@ require('../configs/db.config');
 
 Celebrity.insertMany(celebrities)
   .then(celebrities => {
-    console.error(`Seeded ${celebrities.length} authors properly`);
+    console.error(`Seeded ${celebrities.length} celebrities properly`);
     mongoose.connection.close();
   })
   .catch(error => {
